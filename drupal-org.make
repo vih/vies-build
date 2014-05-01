@@ -8,6 +8,13 @@ projects[vies_deploy][download][url] = "https://github.com/vih/vies_deploy.git"
 projects[vies_deploy][download][branch] = "7.x-1.x"
 projects[vies_deploy][download][revision] = "bbff4c081178a81fe406443ef412020317e6a2b3"
 
+projects[vih_hall_of_fame][type] = "module"
+projects[vih_hall_of_fame][subdir] = "vih"
+projects[vih_hall_of_fame][download][type] = "git"
+projects[vih_hall_of_fame][download][url] = "https://github.com/vih/vih_hall_of_fame.git"
+projects[vih_hall_of_fame][download][branch] = "7.x-1.x"
+projects[vih_hall_of_fame][download][revision] = "42b8660020105f34d22b217e5e70dac1b1bad0bb"
+
 projects[vih_calendar][type] = "module"
 projects[vih_calendar][subdir] = "vih"
 projects[vih_calendar][download][type] = "git"
