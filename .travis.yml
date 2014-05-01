@@ -1,0 +1,64 @@
+language: php
+
+php:
+  - 5.4
+
+mysql:
+  database: drupal
+  username: root
+  encoding: utf8
+
+install:
+  - sudo apt-get update > /dev/null
+  - "mysql -e 'create database drupal;'"
+
+  # Install the latest Drush 6.
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  - composer global require drush/drush:6.*
+  - phpenv rehash
+
+  # Build Behat dependencies
+  - cd ./tests/behat
+  - composer install --no-interaction
+  - cd ../../../
+
+  # Build Codebase
+  - mkdir private_files
+  - mkdir profiles
+  - mv vies-build profiles/vies_dk
+  - mkdir drupal
+  - mv profiles drupal/
+
+  # Test the current branch
+  - cd drupal
+  - drush make --prepare-install profiles/vies_dk/build-vies.make --yes
+  - cd ../
+
+  # Setup files
+  - sudo chmod -R 777 drupal/sites/all
+
+  # Setup display for Selenium
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 5
+
+  # Get Selenium
+  - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.37.0.jar
+  - java -jar selenium-server-standalone-2.37.0.jar > /dev/null 2>&1 &
+  - sleep 5
+
+  # Disable sendmail
+  - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
+before_script:
+
+  - cd drupal
+  - drush si panopoly --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=admin --site-mail=admin@example.com --site-name="vies.dk" --yes
+  - drush runserver --server=builtin 8888 > /dev/null 2>&1 &
+  - sleep 3
+  - cd profiles/vies_dk/tests/behat
+
+script:
+
+  - ./bin/behat --config behat.travis.yml
+
