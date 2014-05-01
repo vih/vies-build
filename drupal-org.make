@@ -42,3 +42,11 @@ projects[twitter_timeline][download][type] = "git"
 projects[twitter_timeline][download][url] = "https://github.com/vih/twitter_timeline.git"
 projects[twitter_timeline][download][branch] = "7.x-1.x"
 projects[twitter_timeline][download][revision] = "33c39b797a"
+
+; Custom theme
+
+projects[ketsjup][type] = "theme"
+projects[ketsjup][download][type] = "git"
+projects[ketsjup][download][url] = "https://github.com/vih/ketsjup-theme.git"
+projects[ketsjup][download][branch] = "7.x-1.x"
+projects[ketsjup][download][revision] = "da6cc17387af1be159018909ebe7099e6908e607"
