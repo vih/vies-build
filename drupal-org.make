@@ -15,6 +15,13 @@ projects[vih_calendar][download][url] = "https://github.com/vih/vih_calendar.git
 projects[vih_calendar][download][branch] = "7.x-1.x"
 projects[vih_calendar][download][revision] = "208ffaf73cd57be51fd6fc6400e5eca5c0d1ed50"
 
+projects[vih_core][type] = "module"
+projects[vih_core][subdir] = "vih"
+projects[vih_core][download][type] = "git"
+projects[vih_core][download][url] = "https://github.com/vih/vih_core.git"
+projects[vih_core][download][branch] = "7.x-1.x"
+projects[vih_core][download][revision] = "208ffaf73cd57be51fd6fc6400e5eca5c0d1ed50"
+
 projects[vih_pwi][type] = "module"
 projects[vih_pwi][subdir] = "vih"
 projects[vih_pwi][download][type] = "git"
@@ -27,7 +34,7 @@ projects[vih_viggo][subdir] = "vih"
 projects[vih_viggo][download][type] = "git"
 projects[vih_viggo][download][url] = "https://github.com/vih/vih_viggo.git"
 projects[vih_viggo][download][branch] = "7.x-1.x"
-projects[vih_viggo][download][revision] = "f18c049f0605b2678a2e0ae128b3b34c2be5ac57"
+projects[vih_viggo][download][revision] = "7a24f255de4e3fef368fbb27c6f2d069da0ec25e"
 
 projects[twitter_timeline][type] = "module"
 projects[twitter_timeline][subdir] = "vih"
