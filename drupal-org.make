@@ -13,7 +13,7 @@ projects[vies_hall_of_fame][subdir] = "vih"
 projects[vies_hall_of_fame][download][type] = "git"
 projects[vies_hall_of_fame][download][url] = "https://github.com/vih/vies_hall_of_fame.git"
 projects[vies_hall_of_fame][download][branch] = "7.x-1.x"
-projects[vies_hall_of_fame][download][revision] = "c2e1f77b58cabaea9dcee43f308c27eeeb7a9b8c"
+projects[vies_hall_of_fame][download][revision] = "43bc997"
 
 projects[vih_calendar][type] = "module"
 projects[vih_calendar][subdir] = "vih"
@@ -28,6 +28,26 @@ projects[vih_core][download][type] = "git"
 projects[vih_core][download][url] = "https://github.com/vih/vih_core.git"
 projects[vih_core][download][branch] = "7.x-1.x"
 projects[vih_core][download][revision] = "7a24f255de4e3fef368fbb27c6f2d069da0ec25e"
+
+projects[vih_facilities][type] = "module"
+projects[vih_facilities][subdir] = "vih"
+projects[vih_facilities][download][type] = "git"
+projects[vih_facilities][download][url] = "https://github.com/vih/vih_facilities.git"
+projects[vih_facilities][download][branch] = "7.x-1.x"
+projects[vih_facilities][download][revision] = "aa0236e"
+
+projects[vih_migrate][type] = "module"
+projects[vih_migrate][subdir] = "vih"
+projects[vih_migrate][download][type] = "git"
+projects[vih_migrate][download][url] = "https://github.com/vih/vih_migrate.git"
+projects[vih_migrate][download][branch] = "7.x-1.x"
+projects[vih_migrate][download][revision] = "ce47aaba756e7fe95d01154c719a7b0c44503022"
+
+projects[commerce_migrate][subdir] = contrib
+projects[commerce_migrate][version] = 1.x-dev
+projects[commerce_migrate][download][type] = git
+projects[commerce_migrate][download][branch] = 1.x-dev
+projects[commerce_migrate][download][revision] = 46a8c0c
 
 projects[vih_pwi][type] = "module"
 projects[vih_pwi][subdir] = "vih"
