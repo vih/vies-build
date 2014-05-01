@@ -13,7 +13,7 @@ projects[vih_hall_of_fame][subdir] = "vih"
 projects[vih_hall_of_fame][download][type] = "git"
 projects[vih_hall_of_fame][download][url] = "https://github.com/vih/vih_hall_of_fame.git"
 projects[vih_hall_of_fame][download][branch] = "7.x-1.x"
-projects[vih_hall_of_fame][download][revision] = "42b8660020105f34d22b217e5e70dac1b1bad0bb"
+projects[vih_hall_of_fame][download][revision] = "c2e1f77b58cabaea9dcee43f308c27eeeb7a9b8c"
 
 projects[vih_calendar][type] = "module"
 projects[vih_calendar][subdir] = "vih"
