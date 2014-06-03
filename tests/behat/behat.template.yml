@@ -11,4 +11,3 @@ default:
       blackbox: ~
       drush:
         root: ${drush.root}
-
