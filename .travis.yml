@@ -46,7 +46,7 @@ install:
   # Get Selenium
   - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.37.0.jar
   - java -jar selenium-server-standalone-2.37.0.jar > /dev/null 2>&1 &
-  - sleep 5
+  - until netstat -an 2>/dev/null | grep '4444.*LISTEN'; do true; done
 
   # Disable sendmail
   - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
@@ -58,7 +58,7 @@ before_script:
   - drush en vies_deploy -y
   - drush pm-disable dblog -y
   - drush runserver --server=builtin 8888 > /dev/null 2>&1 &
-  - sleep 3
+  - until netstat -an 2>/dev/null | grep '8888.*LISTEN'; do true; done
   - cd profiles/vies_dk/tests/behat
 
 script:
