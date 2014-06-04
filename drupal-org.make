@@ -6,7 +6,7 @@ projects[vies_deploy][subdir] = "vih"
 projects[vies_deploy][download][type] = "git"
 projects[vies_deploy][download][url] = "https://github.com/vih/vies_deploy.git"
 projects[vies_deploy][download][branch] = "7.x-1.x"
-projects[vies_deploy][download][revision] = "a0375b4"
+projects[vies_deploy][download][revision] = "76d6d84cbbb992302f854203e924d81a19283cad"
 
 projects[vies_hall_of_fame][type] = "module"
 projects[vies_hall_of_fame][subdir] = "vih"
