@@ -6,7 +6,7 @@ projects[vies_deploy][subdir] = "vih"
 projects[vies_deploy][download][type] = "git"
 projects[vies_deploy][download][url] = "https://github.com/vih/vies_deploy.git"
 projects[vies_deploy][download][branch] = "7.x-1.x"
-projects[vies_deploy][download][revision] = "76d6d84cbbb992302f854203e924d81a19283cad"
+projects[vies_deploy][download][revision] = "cbdbdaa"
 
 projects[vies_hall_of_fame][type] = "module"
 projects[vies_hall_of_fame][subdir] = "vih"
@@ -49,6 +49,13 @@ projects[vih_migrate][download][type] = "git"
 projects[vih_migrate][download][url] = "https://github.com/vih/vih_migrate.git"
 projects[vih_migrate][download][branch] = "7.x-1.x"
 projects[vih_migrate][download][revision] = "ce47aaba756e7fe95d01154c719a7b0c44503022"
+
+projects[vih_plugins][type] = "module"
+projects[vih_plugins][subdir] = "vih"
+projects[vih_plugins][download][type] = "git"
+projects[vih_plugins][download][url] = "https://github.com/vih/vih_plugins.git"
+projects[vih_plugins][download][branch] = "7.x-1.x"
+projects[vih_plugins][download][revision] = "d30ab9cd9f86edbf3019a24d70172fc06fb1ebca"
 
 projects[commerce_migrate][subdir] = contrib
 projects[commerce_migrate][version] = 1.x-dev
