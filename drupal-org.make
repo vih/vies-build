@@ -82,7 +82,7 @@ projects[vih_pwi][subdir] = "vih"
 projects[vih_pwi][download][type] = "git"
 projects[vih_pwi][download][url] = "https://github.com/vih/vih_pwi.git"
 projects[vih_pwi][download][branch] = "7.x-1.x"
-projects[vih_pwi][download][revision] = "36530c2"
+projects[vih_pwi][download][revision] = "c16711a3ab81cefe10d6c931fe4949905f62aa8a"
 
 projects[vih_viggo][type] = "module"
 projects[vih_viggo][subdir] = "vih"
