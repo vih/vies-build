@@ -89,7 +89,7 @@ projects[vih_viggo][subdir] = "vih"
 projects[vih_viggo][download][type] = "git"
 projects[vih_viggo][download][url] = "https://github.com/vih/vih_viggo.git"
 projects[vih_viggo][download][branch] = "7.x-1.x"
-projects[vih_viggo][download][revision] = "f18c049f0605b2678a2e0ae128b3b34c2be5ac57"
+projects[vih_viggo][download][revision] = "c33a1b0"
 
 projects[twitter_timeline][type] = "module"
 projects[twitter_timeline][subdir] = "vih"
