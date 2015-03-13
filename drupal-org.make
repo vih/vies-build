@@ -77,6 +77,10 @@ projects[commerce_migrate][download][type] = git
 projects[commerce_migrate][download][branch] = 1.x-dev
 projects[commerce_migrate][download][revision] = 46a8c0c
 
+projects[draggableviews][subdir] = contrib
+projects[draggableviews][version] = 2.1
+projects[draggableviews][patch][2210473] = https://www.drupal.org/files/issues/MYISAM_index_support-2210473-11.patch
+
 projects[vih_pwi][type] = "module"
 projects[vih_pwi][subdir] = "vih"
 projects[vih_pwi][download][type] = "git"
