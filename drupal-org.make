@@ -13,7 +13,7 @@ projects[vies_employee][subdir] = "vies"
 projects[vies_employee][download][type] = "git"
 projects[vies_employee][download][url] = "https://github.com/vih/vies_employees.git"
 projects[vies_employee][download][branch] = "7.x-1.x"
-projects[vies_employee][download][revision] = "fe35bf4b71c767c0d5a5b5bef2bed8b83d477025"
+projects[vies_employee][download][revision] = "a716bc4b4d9cf2cfd6c190fb2e85431079b0ace7"
 
 projects[vies_hall_of_fame][type] = "module"
 projects[vies_hall_of_fame][subdir] = "vies"
