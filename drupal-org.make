@@ -1,6 +1,8 @@
 api = 2
 core = 7.x
 
+; Custom modules
+
 projects[vies_deploy][type] = "module"
 projects[vies_deploy][subdir] = "vies"
 projects[vies_deploy][download][type] = "git"
@@ -113,4 +115,4 @@ projects[ketsjup][type] = "theme"
 projects[ketsjup][download][type] = "git"
 projects[ketsjup][download][url] = "https://github.com/vih/ketsjup-theme.git"
 projects[ketsjup][download][branch] = "7.x-1.x"
-projects[ketsjup][download][revision] = "25bc855b5ae8d12eb8fab1967e5ee5cd590ff06e"
+projects[ketsjup][download][revision] = "abeb2a49b38dfcad2c4ac0ee7e7f4209bbb75ee7"
