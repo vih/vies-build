@@ -22,7 +22,7 @@ projects[vies_hall_of_fame][subdir] = "vies"
 projects[vies_hall_of_fame][download][type] = "git"
 projects[vies_hall_of_fame][download][url] = "https://github.com/vih/vies_hall_of_fame.git"
 projects[vies_hall_of_fame][download][branch] = "7.x-1.x"
-projects[vies_hall_of_fame][download][revision] = "295b76e8856eb98ce88ac522f42179753712274c"
+projects[vies_hall_of_fame][download][revision] = "f8573d256c1c3b7ed9df147f74760d85e8ee3028"
 
 projects[vies_subject][type] = "module"
 projects[vies_subject][subdir] = "vies"
