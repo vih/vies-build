@@ -29,7 +29,7 @@ projects[vies_subject][subdir] = "vies"
 projects[vies_subject][download][type] = "git"
 projects[vies_subject][download][url] = "https://github.com/vih/vies_subjects.git"
 projects[vies_subject][download][branch] = "7.x-1.x"
-projects[vies_subject][download][revision] = "8c8307ce11e63b82a8e8b3bf6a88b2fc3390e90b"
+projects[vies_subject][download][revision] = "c932cf9b243da06c3c69a71428549e54858a52d2"
 
 projects[vih_calendar][type] = "module"
 projects[vih_calendar][subdir] = "vih"
