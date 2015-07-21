@@ -106,11 +106,6 @@ projects[twitter_timeline][download][revision] = "33c39b797a"
 
 ; Custom theme
 
-projects[radix][type] = theme
-projects[radix][download][type] = git
-projects[radix][download][branch] = 7.x-3.x
-projects[radix][download][revision] = 2f9b4a9
-
 projects[ketsjup][type] = "theme"
 projects[ketsjup][download][type] = "git"
 projects[ketsjup][download][url] = "https://github.com/vih/ketsjup-theme.git"
