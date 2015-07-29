@@ -8,7 +8,7 @@ projects[vies_deploy][subdir] = "vies"
 projects[vies_deploy][download][type] = "git"
 projects[vies_deploy][download][url] = "https://github.com/vih/vies_deploy.git"
 projects[vies_deploy][download][branch] = "7.x-1.x"
-projects[vies_deploy][download][revision] = "5fb050dfb8519b67f4dfcb0340e943cac96d6231"
+projects[vies_deploy][download][revision] = "ac27f98"
 
 projects[vies_employee][type] = "module"
 projects[vies_employee][subdir] = "vies"
