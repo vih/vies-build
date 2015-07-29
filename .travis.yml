@@ -1,5 +1,7 @@
 language: php
 
+sudo: false
+
 php:
   - 5.4
   - 5.5
@@ -9,19 +11,30 @@ mysql:
   username: root
   encoding: utf8
 
+# Cache Composer & Drush directories.
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/.drush/cache
+
 install:
-  - sudo apt-get update > /dev/null
   - "mysql -e 'create database drupal;'"
 
-  # Install the latest Drush 6.
+  # Install latest Drush 6.
+  - travis_retry composer self-update && composer --version
+  - travis_retry composer global require "drush/drush:6.*"
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
-  - composer global require drush/drush:6.*
-  - phpenv rehash
 
   # Build Behat dependencies
   - cd ./tests/behat
-  - composer install --no-interaction
+  - travis_retry composer install --prefer-dist --no-interaction
   - cd ../../../
+
+  # Setting Behat environment
+  - BUILD_TOP=`dirname $TRAVIS_BUILD_DIR`
+  - BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"BUILD_TOP/drupal"}}}}'
+  - BEHAT_PARAMS=`echo $BEHAT_PARAMS | sed -e s#BUILD_TOP#$BUILD_TOP#`
+  - export BEHAT_PARAMS
 
   # Build Codebase
   - mkdir private_files
@@ -37,7 +50,7 @@ install:
   - cd ../
 
   # Setup files
-  - sudo chmod -R 777 drupal/sites/all
+  - chmod -R 777 drupal/sites/all
 
   # Setup display for Selenium
   - export DISPLAY=:99.0
@@ -47,10 +60,18 @@ install:
   # Get Selenium
   - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.37.0.jar
   - java -jar selenium-server-standalone-2.37.0.jar > /dev/null 2>&1 &
-  - until netstat -an 2>/dev/null | grep '4444.*LISTEN'; do true; done
+  - nc -zvv localhost 4444; out=$?; while [[ $out -ne 0 ]]; do echo "Retry hit port 4444..."; nc -zvv localhost 4444; out=$?; sleep 5; done
 
   # Disable sendmail
   - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
+  # Increase the MySQL connection timeout on the PHP end.
+  - echo "mysql.connect_timeout=3000" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - echo "default_socket_timeout=3000" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+
+  # Increase the MySQL server timetout and packet size.
+  - mysql -e "SET GLOBAL wait_timeout = 36000;"
+  - mysql -e "SET GLOBAL max_allowed_packet = 33554432;"
 
 before_script:
 
@@ -59,7 +80,7 @@ before_script:
   - drush en vies_deploy -y
   - drush pm-disable dblog -y
   - drush runserver --server=builtin 8888 > /dev/null 2>&1 &
-  - until netstat -an 2>/dev/null | grep '8888.*LISTEN'; do true; done
+  - nc -zvv localhost 8888; out=$?; while [[ $out -ne 0 ]]; do echo "Retry hit port 8888..."; nc -zvv localhost 8888; out=$?; sleep 5; done
   - cd profiles/vies_dk/tests/behat
 
 script:

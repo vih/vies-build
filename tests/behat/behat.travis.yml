@@ -11,5 +11,3 @@ default:
       blackbox: ~
       drush:
         alias: self
-      drupal:
-        drupal_root: "/home/travis/build/vih/drupal"
