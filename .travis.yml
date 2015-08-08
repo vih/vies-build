@@ -68,4 +68,5 @@ before_script:
 
 script:
 
+  - ./scripts/check-overridden.sh
   - ./bin/behat --config behat.travis.yml

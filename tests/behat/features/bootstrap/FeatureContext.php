@@ -7,6 +7,8 @@ use Behat\Behat\Context\ClosuredContextInterface,
 use Behat\Gherkin\Node\PyStringNode,
   Behat\Gherkin\Node\TableNode;
 use Drupal\DrupalExtension\Context\DrupalContext;
+use Drupal\DrupalExtension\Context\RawDrupalContext;
+use Behat\Behat\Context\SnippetAcceptingContext;
 use Drupal\Component\Utility\Random;
 
 //
@@ -19,14 +21,14 @@ use Drupal\Component\Utility\Random;
 /**
  * Features context.
  */
-class FeatureContext extends DrupalContext {
+class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext {
   /**
    * Initializes context.
    * Every scenario gets its own context object.
    *
    * @param array $parameters context parameters (set them up through behat.yml)
    */
-  public function __construct(array $parameters) {
+  public function __construct() {
     // Initialize your context here
   }
 }
