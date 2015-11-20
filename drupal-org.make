@@ -3,6 +3,9 @@ core = 7.x
 
 ; Contrib modules
 
+projects[mailsystem][subdir] = contrib
+projects[mailsystem][version] = 2.34
+
 projects[mandrill][subdir] = contrib
 projects[mandrill][version] = 2.2
 
