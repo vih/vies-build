@@ -1,6 +1,17 @@
 api = 2
 core = 7.x
 
+; Contrib modules
+
+projects[mandrill][subdir] = contrib
+projects[mandrill][version] = 2.2
+
+; Mandrill PHP Library
+libraries[mandrill][download][type] = "get"
+libraries[mandrill][download][url] = "https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.tar.gz"
+libraries[mandrill][directory_name] = "mandrill"
+libraries[mandrill][destination] = "libraries"
+
 ; Custom modules
 
 projects[vies_deploy][type] = "module"
