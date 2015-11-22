@@ -85,7 +85,7 @@ projects[vih_plugins][subdir] = "vih"
 projects[vih_plugins][download][type] = "git"
 projects[vih_plugins][download][url] = "https://github.com/vih/vih_plugins.git"
 projects[vih_plugins][download][branch] = "7.x-1.x"
-projects[vih_plugins][download][revision] = "d30ab9cd9f86edbf3019a24d70172fc06fb1ebca"
+projects[vih_plugins][download][revision] = "95830726b53535013d13ca7bb84b3f763a2c8933"
 
 projects[commerce_migrate][subdir] = contrib
 projects[commerce_migrate][version] = 1.x-dev
