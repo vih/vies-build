@@ -4,7 +4,10 @@ core = 7.x
 ; Contrib modules
 
 projects[mailsystem][subdir] = contrib
-projects[mailsystem][version] = 2.34
+projects[mailsystem][version] = 2.x-dev
+projects[mailsystem][download][type] = git
+projects[mailsystem][download][revision] = 966e13e
+projects[mailsystem][download][branch] = 7.x-2.x
 
 projects[mandrill][subdir] = contrib
 projects[mandrill][version] = 2.2
