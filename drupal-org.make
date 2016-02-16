@@ -21,6 +21,9 @@ libraries[mandrill][destination] = "libraries"
 projects[mimemail][subdir] = contrib
 projects[mimemail][version] = 1.0-beta4
 
+projects[smtp][subdir] = contrib
+projects[smtp][version] = 1.3
+
 ; Custom modules
 
 projects[vies_deploy][type] = "module"
