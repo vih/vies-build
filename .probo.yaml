@@ -5,3 +5,5 @@ steps:
     profileName: panopoly
     runInstall: true
     revertFeatures: true
+  - name: Enabling demo module
+    command: 'drush --root="/var/www/html" en vies_deploy -y'
