@@ -2,5 +2,6 @@ steps:
   - name: Probo site setup
     plugin: Drupal
     makeFile: build-vies.make
-    runInstall: panopoly
+    profileName: panopoly
+    runInstall: true
     revertFeatures: true
