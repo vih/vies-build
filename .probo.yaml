@@ -4,6 +4,7 @@ steps:
     makeFile: build-vies.make
     profileName: panopoly
     runInstall: true
+    databaseUpdates: true
     revertFeatures: true
   - name: Enabling demo module
     command: 'drush --root="/var/www/html" en vies_deploy -y'
