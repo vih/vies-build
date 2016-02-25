@@ -12,7 +12,18 @@ mysql:
   username: root
   encoding: utf8
 
+# Cache Composer & Drush directories.
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/.drush/cache
+    - tests/behat/vendor
+
 install:
+  # Remove xdebug for the moment. We aren't generating code coverage, and it slows us down.
+  - rm /home/travis/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
+
+  # Create database.
   - "mysql -e 'create database drupal;'"
 
   # Install latest Drush 6.
@@ -22,7 +33,8 @@ install:
 
   # Build Behat dependencies
   - cd ./tests/behat
-  - composer install --no-interaction
+  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
+  - composer install --no-interaction --prefer-dist
   - cd ../../../
 
   # Build Codebase
