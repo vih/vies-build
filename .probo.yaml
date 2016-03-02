@@ -11,3 +11,5 @@ steps:
   - name: Enable stage_file_proxy
     command: 'drush --root="/var/www/html" en stage_file_proxy -y'
     command: 'drush variable-set stage_file_proxy_origin "http://vies.dk"'
+  - name: Generate login link
+    command: 'drush --root="/var/www/html" uli'
