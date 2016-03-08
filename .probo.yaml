@@ -1,15 +1,22 @@
+assets:
+  - vies.sql.gz
 steps:
-  - name: Probo site setup
+  - name: ProboCI site setup
     plugin: Drupal
     makeFile: build-vies.make
-    profileName: panopoly
-    runInstall: true
+    database: vies.sql.gz
+    databaseGzipped: true
     databaseUpdates: true
     revertFeatures: true
-  - name: Enabling demo module
-    command: 'drush --root="/var/www/html" en vies_deploy -y'
-  - name: Enable stage_file_proxy
-    command: 'drush --root="/var/www/html" en stage_file_proxy -y'
-    command: 'drush variable-set stage_file_proxy_origin "http://vies.dk"'
+  - name: Make directory for site
+    command: 'mkdir /var/www/html/sites/vies.local; mkdir /var/www/html/sites/vies.local/files; mkdir /var/www/html/sites/vies.local/private; mkdir /var/www/html/sites/vies.local/private/temp'
+  - name: Fix permissions
+    command: 'chown -R www-data:www-data /var/www/html/sites/vies.local; chmod 777 -R /var/www/html/sites/vies.local'
   - name: Generate login link
     command: 'drush --root="/var/www/html" uli'
+  - name: Enable stage_file_proxy
+    command: 'drush --root="/var/www/html" en stage_file_proxy -y; drush variable-set stage_file_proxy_origin "http://vies.dk"'
+  - name: Reroute e-mails
+    command: 'drush --root="/var/www/html" en reroute_email -y; drush variable-set reroute_email_enable 1; drush variable-set reroute_email_address "webmaster@vih.dk"'
+  - name: Disable certain modules
+    command: 'drush --root="/var/www/html" pm-disable googleanalytics'
