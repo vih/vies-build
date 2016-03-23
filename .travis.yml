@@ -46,7 +46,7 @@ install:
 
   # Test the current branch
   - cd drupal
-  - drush make --prepare-install profiles/vies_dk/build-vies.make --yes
+  - drush make --prepare-install profiles/vies_dk/build-vies-dev.make --yes
   - drush dl panopoly_demo-1.x-dev
   - cd ../
 
