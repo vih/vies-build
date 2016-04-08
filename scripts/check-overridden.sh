@@ -3,7 +3,7 @@
 : ${DRUSH:=drush}
 : ${DRUSH_ARGS:=}
 
-FEATURES="vies_hall_of_fame vih_calendar vih_core vih_facilities vih_fields vih_viggo"
+FEATURES="vies_hall_of_fame vih_calendar vih_core vih_fields vih_viggo"
 
 # TODO: We should make sure that 'diff' is downloaded first!
 $DRUSH $DRUSH_ARGS en -y diff
