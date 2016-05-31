@@ -9,15 +9,6 @@ projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
 projects[mailsystem][download][branch] = 7.x-2.x
 
-projects[mandrill][subdir] = contrib
-projects[mandrill][version] = 2.2
-
-; Mandrill PHP Library
-libraries[mandrill][download][type] = "get"
-libraries[mandrill][download][url] = "https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.tar.gz"
-libraries[mandrill][directory_name] = "mandrill"
-libraries[mandrill][destination] = "libraries"
-
 projects[mimemail][subdir] = contrib
 projects[mimemail][version] = 1.0-beta4
 
