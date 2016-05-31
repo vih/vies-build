@@ -105,7 +105,7 @@ projects[commerce_migrate][download][revision] = 46a8c0c
 projects[draggableviews][subdir] = contrib
 projects[draggableviews][version] = 2.x-dev
 projects[draggableviews][download][type] = git
-projects[draggableviews][download][revision] = ae986ee
+projects[draggableviews][download][revision] = 0ebbe35
 projects[draggableviews][download][branch] = 7.x-2.x
 
 projects[vih_pwi][type] = "module"
