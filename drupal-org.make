@@ -9,15 +9,6 @@ projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
 projects[mailsystem][download][branch] = 7.x-2.x
 
-projects[mandrill][subdir] = contrib
-projects[mandrill][version] = 2.2
-
-; Mandrill PHP Library
-libraries[mandrill][download][type] = "get"
-libraries[mandrill][download][url] = "https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.tar.gz"
-libraries[mandrill][directory_name] = "mandrill"
-libraries[mandrill][destination] = "libraries"
-
 projects[mimemail][subdir] = contrib
 projects[mimemail][version] = 1.0-beta4
 
@@ -103,8 +94,10 @@ projects[commerce_migrate][download][branch] = 1.x-dev
 projects[commerce_migrate][download][revision] = 46a8c0c
 
 projects[draggableviews][subdir] = contrib
-projects[draggableviews][version] = 2.1
-projects[draggableviews][patch][2210473] = https://www.drupal.org/files/issues/MYISAM_index_support-2210473-11.patch
+projects[draggableviews][version] = 2.x-dev
+projects[draggableviews][download][type] = git
+projects[draggableviews][download][revision] = 0ebbe35
+projects[draggableviews][download][branch] = 7.x-2.x
 
 projects[vih_pwi][type] = "module"
 projects[vih_pwi][subdir] = "vih"
