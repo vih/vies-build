@@ -1,28 +1,74 @@
 api = 2
 core = 7.x
 
+defaults[projects][subdir] = contrib
+
+; Contrib profiles
+
+projects[panopoly][type] = profile
+projects[panopoly][version] = 1.x-dev
+projects[panopoly][subdir] = ""
+projects[panopoly][download][type] = git
+projects[panopoly][download][branch] = 7.x-1.x
+projects[panopoly][download][revision] = 65ea0dc
+
 ; Contrib modules
 
-projects[mailsystem][subdir] = contrib
+projects[calendar][version] = 3.5
+
+projects[colorbox][version] = 2.12
+
+projects[commerce][version] = 1.13
+projects[commerce][patch][840786] = http://drupal.org/files/840786-add-account-info-2.patch
+
+projects[date_ical][version] = 3.9
+
+projects[feeds][version] = 2.0-beta2
+
+projects[i18n][version] = 1.13
+
+projects[job_scheduler][version] = 2.0-alpha3
+
+projects[mailchimp][version] = 2.13
+
+libraries[mailchimp][download][type] = "get"
+libraries[mailchimp][download][url] = "https://github.com/lsolesen/mailchimp-api-class/archive/v.1.3.2.zip"
+libraries[mailchimp][directory_name] = "mailchimp"
+libraries[mailchimp][destination] = "libraries"
+
 projects[mailsystem][version] = 2.x-dev
 projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
 projects[mailsystem][download][branch] = 7.x-2.x
 
-projects[mandrill][subdir] = contrib
-projects[mandrill][version] = 2.2
-
-; Mandrill PHP Library
-libraries[mandrill][download][type] = "get"
-libraries[mandrill][download][url] = "https://bitbucket.org/mailchimp/mandrill-api-php/get/1.0.52.tar.gz"
-libraries[mandrill][directory_name] = "mandrill"
-libraries[mandrill][destination] = "libraries"
-
-projects[mimemail][subdir] = contrib
 projects[mimemail][version] = 1.0-beta4
 
-projects[smtp][subdir] = contrib
+projects[node_clone][version] = 1.0
+
+projects[panopoly_demo][version] = 1.38
+projects[panopoly_demo][subdir] = panopoly
+
+projects[panopoly_faq][version] = 1.1
+projects[panopoly_faq][subdir] = panopoly
+
+projects[panopoly_news][subdir] = panopoly
+projects[panopoly_news][version] = 1.2
+projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2256489.patch
+
+projects[panopoly_seo][version] = 1.0-beta8
+projects[panopoly_seo][subdir] = panopoly
+
+projects[rules][version] = 2.9
+
+projects[select_or_other][version] = 2.22
+
 projects[smtp][version] = 1.3
+
+projects[variable][version] = 2.5
+
+projects[webform][version] = 4.14
+
+projects[webform_mailchimp][version] = 2.0-beta1
 
 ; Custom modules
 
@@ -103,8 +149,10 @@ projects[commerce_migrate][download][branch] = 1.x-dev
 projects[commerce_migrate][download][revision] = 46a8c0c
 
 projects[draggableviews][subdir] = contrib
-projects[draggableviews][version] = 2.1
-projects[draggableviews][patch][2210473] = https://www.drupal.org/files/issues/MYISAM_index_support-2210473-11.patch
+projects[draggableviews][version] = 2.x-dev
+projects[draggableviews][download][type] = git
+projects[draggableviews][download][revision] = 0ebbe35
+projects[draggableviews][download][branch] = 7.x-2.x
 
 projects[vih_pwi][type] = "module"
 projects[vih_pwi][subdir] = "vih"
@@ -127,10 +175,24 @@ projects[twitter_timeline][download][url] = "https://github.com/vih/twitter_time
 projects[twitter_timeline][download][branch] = "7.x-1.x"
 projects[twitter_timeline][download][revision] = "33c39b797a"
 
+; Contrib themes
+
+projects[colorizer][version] = 1.10
+
+projects[radix][version] = 3.0-rc4 
+
+projects[radix_colorizer][version] = 1.x-dev
+projects[radix_colorizer][download][type] = git
+projects[radix_colorizer][download][revision] = 29321ae 
+projects[radix_colorizer][download][branch] = 7.x-1.x
+
+projects[radix_views][version] = 1.0 
+
 ; Custom theme
 
 projects[ketsjup][type] = "theme"
 projects[ketsjup][download][type] = "git"
+projects[ketsjup][download][subdir] = ""
 projects[ketsjup][download][url] = "https://github.com/vih/ketsjup-theme.git"
 projects[ketsjup][download][branch] = "7.x-3.x"
 projects[ketsjup][download][revision] = "0aca53e"
