@@ -124,6 +124,7 @@ projects[twitter_timeline][download][revision] = "33c39b797a"
 
 projects[ketsjup][type] = "theme"
 projects[ketsjup][download][type] = "git"
+projects[ketsjup][download][subdir] = ""
 projects[ketsjup][download][url] = "https://github.com/vih/ketsjup-theme.git"
 projects[ketsjup][download][branch] = "7.x-3.x"
 projects[ketsjup][download][revision] = "0aca53e"
