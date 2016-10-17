@@ -27,6 +27,15 @@ projects[feeds][version] = 2.0-beta2
 
 projects[i18n][version] = 1.13
 
+projects[job_scheduler][version] = 2.0-alpha3
+
+projects[mailchimp][version] = 2.13
+
+libraries[mailchimp][download][type] = "get"
+libraries[mailchimp][download][url] = "https://github.com/lsolesen/mailchimp-api-class/archive/v.1.3.2.zip"
+libraries[mailchimp][directory_name] = "mailchimp"
+libraries[mailchimp][destination] = "libraries"
+
 projects[mailsystem][version] = 2.x-dev
 projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
@@ -49,9 +58,13 @@ projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2
 projects[panopoly_seo][version] = 1.0-beta8
 projects[panopoly_seo][subdir] = panopoly
 
+projects[rules][version] = 2.9
+
 projects[select_or_other][version] = 2.22
 
 projects[smtp][version] = 1.3
+
+projects[variable][version] = 2.5
 
 projects[webform][version] = 4.14
 
