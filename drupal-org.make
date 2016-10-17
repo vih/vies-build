@@ -14,6 +14,19 @@ projects[panopoly][download][revision] = 65ea0dc
 
 ; Contrib modules
 
+projects[calendar][version] = 3.5
+
+projects[colorbox][version] = 2.12
+
+projects[commerce][version] = 1.13
+projects[commerce][patch][840786] = http://drupal.org/files/840786-add-account-info-2.patch
+
+projects[date_ical][version] = 3.9
+
+projects[feeds][version] = 2.0-beta2
+
+projects[i18n][version] = 1.13
+
 projects[mailsystem][version] = 2.x-dev
 projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
@@ -36,7 +49,13 @@ projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2
 projects[panopoly_seo][version] = 1.0-beta8
 projects[panopoly_seo][subdir] = panopoly
 
+projects[select_or_other][version] = 2.22
+
 projects[smtp][version] = 1.3
+
+projects[webform][version] = 4.14
+
+projects[webform_mailchimp][version] = 2.0-beta1
 
 ; Custom modules
 
@@ -142,6 +161,19 @@ projects[twitter_timeline][download][type] = "git"
 projects[twitter_timeline][download][url] = "https://github.com/vih/twitter_timeline.git"
 projects[twitter_timeline][download][branch] = "7.x-1.x"
 projects[twitter_timeline][download][revision] = "33c39b797a"
+
+; Contrib themes
+
+projects[colorizer][version] = 1.10
+
+projects[radix][version] = 3.0-rc4 
+
+projects[radix_colorizer][version] = 1.x-dev
+projects[radix_colorizer][download][type] = git
+projects[radix_colorizer][download][revision] = 29321ae 
+projects[radix_colorizer][download][branch] = 7.x-1.x
+
+projects[radix_views][version] = 1.0 
 
 ; Custom theme
 
