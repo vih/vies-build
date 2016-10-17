@@ -1,18 +1,41 @@
 api = 2
 core = 7.x
 
+defaults[projects][subdir] = contrib
+
+; Contrib profiles
+
+projects[panopoly][type] = profile
+projects[panopoly][version] = 1.x-dev
+projects[panopoly][subdir] = ""
+projects[panopoly][download][type] = git
+projects[panopoly][download][branch] = 7.x-1.x
+projects[panopoly][download][revision] = 65ea0dc
+
 ; Contrib modules
 
-projects[mailsystem][subdir] = contrib
 projects[mailsystem][version] = 2.x-dev
 projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
 projects[mailsystem][download][branch] = 7.x-2.x
 
-projects[mimemail][subdir] = contrib
 projects[mimemail][version] = 1.0-beta4
 
-projects[smtp][subdir] = contrib
+projects[node_clone][version] = 1.0
+
+projects[panopoly_demo][version] = 1.38
+projects[panopoly_demo][subdir] = panopoly
+
+projects[panopoly_faq][version] = 1.1
+projects[panopoly_faq][subdir] = panopoly
+
+projects[panopoly_news][subdir] = panopoly
+projects[panopoly_news][version] = 1.2
+projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2256489.patch
+
+projects[panopoly_seo][version] = 1.0-beta8
+projects[panopoly_seo][subdir] = panopoly
+
 projects[smtp][version] = 1.3
 
 ; Custom modules
