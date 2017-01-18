@@ -67,6 +67,11 @@ projects[webform][version] = 4.14
 
 projects[webform_mailchimp][version] = 2.0-beta1
 
+projects[wysiwyg][version] = 2.x-dev
+projects[wysiwyg][download][type] = git
+projects[wysiwyg][download][revision] = ee64524b3edb2aa21098a2309b0736e292010247
+projects[wysiwyg][download][branch] = 7.x-2.x
+
 ; Custom modules
 
 projects[vies_deploy][type] = "module"
