@@ -11,6 +11,12 @@ projects[panopoly][subdir] = ""
 
 ; Contrib modules
 
+projects[addressfield][version] = 1.2
+
+projects[addressfield_tokens][version] = 1.5
+
+projects[adminrole][version] = 1.1
+
 projects[calendar][version] = 3.5
 
 projects[colorbox][version] = 2.12
@@ -18,13 +24,28 @@ projects[colorbox][version] = 2.12
 projects[commerce][version] = 1.13
 projects[commerce][patch][840786] = http://drupal.org/files/840786-add-account-info-2.patch
 
+projects[commerce_migrate][version] = 1.2
+
 projects[date_ical][version] = 3.9
 
+projects[diff][version] = 3.x-dev
+projects[diff][download][type] = git
+projects[diff][download][revision] = 29ca19a003bfa1cb3fd4a86fe20aacae72e90767
+projects[diff][download][branch] = 7.x-3.x
+
+projects[email][version] = 1.3
+
+projects[entityqueue][version] = 1.1
+
 projects[feeds][version] = 2.0-beta2
+
+projects[google_analytics][version] = 2.3
 
 projects[i18n][version] = 1.13
 
 projects[job_scheduler][version] = 2.0-alpha3
+
+projects[logintoboggan][version] = 1.5
 
 projects[mailchimp][version] = 2.13
 
@@ -42,6 +63,8 @@ projects[mimemail][version] = 1.0-beta4
 
 projects[node_clone][version] = 1.0
 
+projects[panels_extra_styles][version] = 1.1
+
 projects[panopoly_demo][version] = 1.38
 projects[panopoly_demo][subdir] = panopoly
 
@@ -55,6 +78,8 @@ projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2
 projects[panopoly_seo][version] = 1.0-beta8
 projects[panopoly_seo][subdir] = panopoly
 
+projects[pdf_reader][version] = 1.0-rc5
+
 projects[rules][version] = 2.9
 
 projects[select_or_other][version] = 2.22
@@ -66,6 +91,11 @@ projects[variable][version] = 2.5
 projects[webform][version] = 4.14
 
 projects[webform_mailchimp][version] = 2.0-beta1
+
+projects[views_responsive_grid][version] = 1.3
+
+projects[views_slideshow][version] = 3.1
+projects[views_slideshow][patch][2252161] = http://drupal.org/files/issues/issue-2252161_0.patch
 
 projects[wysiwyg][version] = 2.x-dev
 projects[wysiwyg][download][type] = git
