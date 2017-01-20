@@ -37,6 +37,8 @@ projects[email][version] = 1.3
 
 projects[entityqueue][version] = 1.1
 
+projects[facebook_tracking_pixel][version] = 1.0
+
 projects[feeds][version] = 2.0-beta2
 
 projects[google_analytics][version] = 2.3
