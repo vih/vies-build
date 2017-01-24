@@ -176,12 +176,6 @@ projects[vih_plugins][download][url] = "https://github.com/vih/vih_plugins.git"
 projects[vih_plugins][download][branch] = "7.x-1.x"
 projects[vih_plugins][download][revision] = "95830726b53535013d13ca7bb84b3f763a2c8933"
 
-projects[commerce_migrate][subdir] = contrib
-projects[commerce_migrate][version] = 1.x-dev
-projects[commerce_migrate][download][type] = git
-projects[commerce_migrate][download][branch] = 1.x-dev
-projects[commerce_migrate][download][revision] = 46a8c0c
-
 projects[draggableviews][subdir] = contrib
 projects[draggableviews][version] = 2.x-dev
 projects[draggableviews][download][type] = git
@@ -225,8 +219,8 @@ projects[radix_views][version] = 1.0
 ; Custom theme
 
 projects[ketsjup][type] = "theme"
+projects[ketsjup][subdir] = ""
 projects[ketsjup][download][type] = "git"
-projects[ketsjup][download][subdir] = ""
 projects[ketsjup][download][url] = "https://github.com/vih/ketsjup-theme.git"
 projects[ketsjup][download][branch] = "7.x-3.x"
 projects[ketsjup][download][revision] = "0aca53e"
