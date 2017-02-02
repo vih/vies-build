@@ -9,6 +9,21 @@ projects[panopoly][type] = profile
 projects[panopoly][version] = 1.41
 projects[panopoly][subdir] = ""
 
+; Panopoly modules
+
+projects[panopoly_demo][version] = 1.38
+projects[panopoly_demo][subdir] = panopoly
+
+projects[panopoly_faq][version] = 1.1
+projects[panopoly_faq][subdir] = panopoly
+
+projects[panopoly_news][subdir] = panopoly
+projects[panopoly_news][version] = 1.2
+projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2256489.patch
+
+projects[panopoly_seo][version] = 1.0-beta9
+projects[panopoly_seo][subdir] = panopoly
+
 ; Contrib modules
 
 projects[addressfield][version] = 1.2
@@ -66,19 +81,6 @@ projects[mimemail][version] = 1.0-beta4
 projects[node_clone][version] = 1.0
 
 projects[panels_extra_styles][version] = 1.1
-
-projects[panopoly_demo][version] = 1.38
-projects[panopoly_demo][subdir] = panopoly
-
-projects[panopoly_faq][version] = 1.1
-projects[panopoly_faq][subdir] = panopoly
-
-projects[panopoly_news][subdir] = panopoly
-projects[panopoly_news][version] = 1.2
-projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2256489.patch
-
-projects[panopoly_seo][version] = 1.0-beta8
-projects[panopoly_seo][subdir] = panopoly
 
 projects[pdf_reader][version] = 1.0-rc5
 
