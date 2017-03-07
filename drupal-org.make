@@ -6,7 +6,7 @@ defaults[projects][subdir] = contrib
 ; Contrib profiles
 
 projects[panopoly][type] = profile
-projects[panopoly][version] = 1.41
+projects[panopoly][version] = 1.43
 projects[panopoly][subdir] = ""
 
 ; Panopoly modules
