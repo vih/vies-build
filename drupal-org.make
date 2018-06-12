@@ -6,12 +6,12 @@ defaults[projects][subdir] = contrib
 ; Contrib profiles
 
 projects[panopoly][type] = profile
-projects[panopoly][version] = 1.46
+projects[panopoly][version] = 1.54
 projects[panopoly][subdir] = ""
 
 ; Panopoly modules
 
-projects[panopoly_demo][version] = 1.46
+projects[panopoly_demo][version] = 1.54
 projects[panopoly_demo][subdir] = panopoly
 
 projects[panopoly_faq][version] = 1.1
@@ -21,14 +21,14 @@ projects[panopoly_news][subdir] = panopoly
 projects[panopoly_news][version] = 1.2
 projects[panopoly_news][patch][2256489] = http://drupal.org/files/issues/issue-2256489.patch
 
-projects[panopoly_seo][version] = 1.0-beta9
+projects[panopoly_seo][version] = 1.0-beta10
 projects[panopoly_seo][subdir] = panopoly
 
 ; Contrib modules
 
 projects[addressfield][version] = 1.2
 
-projects[addressfield_tokens][version] = 1.5
+projects[addressfield_tokens][version] = 1.11
 
 projects[adminrole][version] = 1.1
 
@@ -50,7 +50,7 @@ projects[diff][download][branch] = 7.x-3.x
 
 projects[email][version] = 1.3
 
-projects[entityqueue][version] = 1.1
+projects[entityqueue][version] = 1.5
 
 projects[facebook_tracking_pixel][version] = 1.0
 
@@ -58,9 +58,9 @@ projects[feeds][version] = 2.0-beta2
 
 projects[google_analytics][version] = 2.3
 
-projects[i18n][version] = 1.13
+projects[i18n][version] = 1.14
 
-projects[job_scheduler][version] = 2.0-alpha3
+projects[job_scheduler][version] = 2.0
 
 projects[logintoboggan][version] = 1.5
 
@@ -76,7 +76,7 @@ projects[mailsystem][download][type] = git
 projects[mailsystem][download][revision] = 966e13e
 projects[mailsystem][download][branch] = 7.x-2.x
 
-projects[mimemail][version] = 1.0-beta4
+projects[mimemail][version] = 1.0
 
 projects[node_clone][version] = 1.0
 
@@ -84,15 +84,15 @@ projects[panels_extra_styles][version] = 1.1
 
 projects[pdf_reader][version] = 1.0-rc5
 
-projects[rules][version] = 2.9
+projects[rules][version] = 2.11
 
-projects[select_or_other][version] = 2.22
+projects[select_or_other][version] = 2.23
 
 projects[smtp][version] = 1.3
 
 projects[variable][version] = 2.5
 
-projects[webform][version] = 4.14
+projects[webform][version] = 4.17
 
 projects[webform_mailchimp][version] = 2.0-beta1
 
